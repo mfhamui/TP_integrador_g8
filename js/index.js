@@ -1,4 +1,9 @@
-const URL = `https://dummyjson.com/recipes?limit=10&skip=10&select=name,image`
+let qs= location.search;
+let qsObj = new URLSearchParams(qs);
+let info = qsObj.get(`q`);
+const URL = `https://dummyjson.com/recipes?limit=10&skip=0&select=name,image`
+
+let sr= document.querySelector(".search-results"); 
 
 
 fetch (URL)
