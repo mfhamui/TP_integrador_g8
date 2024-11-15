@@ -1,7 +1,7 @@
 let qs= location.search;
 let qsObj = new URLSearchParams(qs);
 let info = qsObj.get(`q`);
-const URL = `https://dummyjson.com/recipes?limit=10&skip=0&select=name,image`
+const URL = `https://dummyjson.com/recipes?limit=10&skip=0`
 
 let ci= document.querySelector(".comidaindex"); 
 
@@ -20,8 +20,9 @@ fetch (URL)
         comida += 
             `<article>
                 <img src= "${recipes[i].image}" alt=''> 
-                <h1>:${recipes[i].name} <h1> 
+                <h1>${recipes[i].name} <h1> 
                 <p>Nivel de dificultad: ${recipes[i].id}</p>
+                <a href="./receta.html?id=${recipes[i].id}"> <p> link para el detalle</p> </a> 
             </article>`
     };
     ci.innerHTML = comida;
