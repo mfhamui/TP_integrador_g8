@@ -1,0 +1,35 @@
+header{
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.imagenLogo{
+    height: 100px;
+    display: flex;
+
+}
+.ulHeader{
+    list-style-type:none ;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    width: 600px;
+    height: 40px;
+    margin: 20px;      
+}
+a{
+    text-decoration:none;
+    color: black;
+}
+.opciones{
+    font-style: bold;
+}
+.barraBusqueda{
+    margin: auto;
+    display: flex;
+    justify-items: center;
+    width: 80%;
+}
+
