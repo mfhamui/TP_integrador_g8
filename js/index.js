@@ -3,7 +3,7 @@ let qsObj = new URLSearchParams(qs);
 let info = qsObj.get(`q`);
 const URL = `https://dummyjson.com/recipes?limit=10&skip=0&select=name,image`
 
-let sr= document.querySelector(".search-results"); 
+let ci= document.querySelector(".comidaindex"); 
 
 
 fetch (URL)
@@ -13,19 +13,19 @@ fetch (URL)
 
 .then(function (data) {
     console.log(data); 
-    let character= "";
-    let results= data.results; 
+    let comida= "";
+    let recipes= data.recipes; 
 
-    for (let i = 0; i < results.length; i++) {
-        character += 
+    for (let i = 0; i < recipes.length; i++) {
+        comida += 
             `<article>
-                <img src= "${results[i].image}" alt=''>
-                <a href="./detalle.html?id=${results[i].id}">  
-                <p>Name:${results[i].name} </p> </a> 
-                <p>Status: ${results[i].status}</p>
+                <img src= "${recipes[i].image}" alt=''>
+                <a href="./detalle.html?id=${recipes[i].id}">  
+                <p>Name:${recipes[i].name} </p> </a> 
+                <p>Status: ${recipes[i].status}</p>
             </article>`
     };
-    sr.innerHTML = character;
+    ci.innerHTML = comida;
    
 })
 .catch(function (error) {
