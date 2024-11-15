@@ -19,7 +19,7 @@ fetch (URL)
     for (let i = 0; i < recipes.length; i++) {
         comida += 
             `<article>
-                <img src= "${recipes[i].image}" alt=''> 
+                <img class= "fotorep" src= "${recipes[i].image}" alt=''> 
                 <h1>${recipes[i].name} <h1> 
                 <p>Nivel de dificultad: ${recipes[i].id}</p>
                 <a href="./receta.html?id=${recipes[i].id}"> <p> link para el detalle</p> </a> 
