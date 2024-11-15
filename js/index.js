@@ -18,11 +18,11 @@ fetch (URL)
 
     for (let i = 0; i < recipes.length; i++) {
         comida += 
-            `<article>
+            `<article class= "articulorep">
                 <img class= "fotorep" src= "${recipes[i].image}" alt=''> 
-                <h1>${recipes[i].name} <h1> 
-                <p>Nivel de dificultad: ${recipes[i].id}</p>
-                <a href="./receta.html?id=${recipes[i].id}"> <p> link para el detalle</p> </a> 
+                <h1 class= "titulorep">${recipes[i].name} <h1> 
+                <p class= "parraforep" >Nivel de dificultad: ${recipes[i].id}</p>
+                <a  href="./receta.html?id=${recipes[i].id}"> <p class= "parraforep" > Detalle...</p> </a> 
             </article>`
     };
     ci.innerHTML = comida;

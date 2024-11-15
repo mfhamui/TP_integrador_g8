@@ -1,3 +1,6 @@
+*{box-sizing: border-box;
+}
+
 header{
     background-color: brown;
     display: flex;
@@ -33,3 +36,41 @@ a{
     width: 80%;
 }
 
+/*esto es del body*/
+.fotorep {
+    width: 90%;
+    align-self: center;
+    margin: 5px 0px;
+}
+
+.titulorep{
+    font-size: large;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 1px;
+}
+.parraforep{
+    font-weight: normal;
+    font-size: medium;
+    margin: 5px;
+    
+}
+.comidaindex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+
+}
+.articulorep{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 18%;
+    height: 40%;
+    border: 1px solid black;
+    margin: 10px;
+    
+}
