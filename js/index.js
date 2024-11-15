@@ -19,10 +19,9 @@ fetch (URL)
     for (let i = 0; i < recipes.length; i++) {
         comida += 
             `<article>
-                <img src= "${recipes[i].image}" alt=''>
-                <a href="./detalle.html?id=${recipes[i].id}">  
-                <p>Name:${recipes[i].name} </p> </a> 
-                <p>Status: ${recipes[i].status}</p>
+                <img src= "${recipes[i].image}" alt=''> 
+                <h1>:${recipes[i].name} <h1> 
+                <p>Nivel de dificultad: ${recipes[i].id}</p>
             </article>`
     };
     ci.innerHTML = comida;
