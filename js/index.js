@@ -22,7 +22,7 @@ fetch (URL)
                 <img class= "fotorep" src= "${recipes[i].image}" alt=''> 
                 <h1 class= "titulorep">${recipes[i].name} <h1> 
                 <p class= "parraforep" >Nivel de dificultad: ${recipes[i].id}</p>
-                <a  href="./receta.html?id=${recipes[i].id}"> <p class= "parraforep" > Detalle...</p> </a> 
+                <a class="linkrep" href="./receta.html?id=${recipes[i].id}"> Detalle </a> 
             </article>`
     };
     ci.innerHTML = comida;
