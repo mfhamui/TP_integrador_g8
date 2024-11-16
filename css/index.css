@@ -15,9 +15,6 @@ header{
 .imagenLogo{
     height: 100px;
     display: flex;
-    
-    
-
 }
 .imagenLogo img {
     border-radius: 70px;
@@ -103,3 +100,30 @@ header{
 
     
 }
+/* log in css */ 
+.logIn-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logIn-form form{
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-direction: column; 
+}
+.logIn-form input, .logIn-form button{
+    padding: 10px;
+    margin: 10px;
+    height: 50px;
+}
+.logIn-form button{
+    margin-top: 20px;
+    width: 200px;
+}
+.noTenerCuenta{
+    text-decoration: none;
+    color: black;
+}
+
+

@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   <link rel="stylesheet" href="./css/index.css">
+    <title>logIn</title>
 </head>
 <body>
+    <header>
+        <section class="imagenLogo">
+            <img src="./img/logo.png" alt="" >
+        </section>
+        <section class="barraBusqueda">
+            <form action="busqueda">
+                <input  class="search" type="text" >
+                <button type="buscar"> buscar </button>
+            </form>
+        </section>
+        <section class="op">
+            <ul class="ulHeader">
+                <li class="opciones"><a href="./index.html">Home</a></li>
+                <li class="opciones"><a href="./categories.html">Categorias</a></li>
+                <li class="opciones"><a href="./login.html">LogIn</a></li>
+                <li class="opciones"><a href="./register.html">Registro</a></li>
+            </ul>
+        </section>
+    </header>
+    <main class="logIn-form">
+        <h2>Log In</h2>
+        <form>
+            <input type="email" placeholder="ingrese su email" required>
+            <input type="password" placeholder="Contraseña" required>
+        </form>
+        <button type="submit">Ingresar<a href="./index.html"></a>
+        </button>
+        <a class="noTenerCuenta" href="./register.html">¿No tenes cuenta?</a>
+    </main>
     <script src="./js/login.js"></script>
 </body>
 </html>
