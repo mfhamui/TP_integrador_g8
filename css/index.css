@@ -139,8 +139,10 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 100px;
     background-color: rgb(70, 20, 20);
     width: 40%;
+    height: 300px;
     justify-self: center;
 }
 .logIn-form form{
