@@ -132,13 +132,7 @@ header{
 
 
 /* log in css */ 
-.unlog{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 50px;
-}
+
 .titulologin{
     display: flex;
     text-transform: uppercase;
@@ -150,18 +144,12 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:  rgba(128, 128, 128, 0.253);
-    width: 40%;
-    height: 300px;
-    justify-self: center;
     justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
 }
-.logIn-form form{
-    width: 400px;
-    height: 100px;
-    display: flex;
-    flex-direction: column; 
-}
+
 .logIn-form input, .logIn-form button{
     padding: 10px;
     margin: 10px;
@@ -236,4 +224,11 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between ;
+ }
+ .relog{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
  }
