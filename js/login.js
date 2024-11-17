@@ -13,3 +13,4 @@ Contraseña.addEventListener("blur",function(){
             alert ("Por favor complete el campo contraseña")
         }
     });
+    
