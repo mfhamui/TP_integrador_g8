@@ -150,15 +150,12 @@ header{
     
 }
 
-.logIn-form input, .logIn-form button{
+.hola{
     padding: 10px;
     margin: 10px;
     height: 50px;
 }
-.logIn-form button{
-    margin-top: 20px;
-    width: 200px;
-}
+
 .noTenerCuenta{
     text-decoration: none;
     color: white;
@@ -211,9 +208,8 @@ header{
     width: 100%;
  }
  
- .ti {
-    font-weight: bold;
-    font-size: large;
+ .titu {
+    color: white;
     margin: 5px;
  }
  .blanco {
@@ -228,7 +224,5 @@ header{
  .relog{
     text-decoration: none;
     color: white;
-    display: flex;
-    justify-content: center;
     margin-top: 10px;
  }
