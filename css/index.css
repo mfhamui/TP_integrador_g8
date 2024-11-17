@@ -132,18 +132,29 @@ header{
 
 
 /* log in css */ 
+.unlog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+}
 .titulologin{
+    display: flex;
+    text-transform: uppercase;
+    align-self: center;
     color: white;
+    font-size: xx-large;
 }
 .logIn-form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
-    background-color: rgb(70, 20, 20);
+    background-color:  rgba(128, 128, 128, 0.253);
     width: 40%;
     height: 300px;
     justify-self: center;
+    justify-content: center;
 }
 .logIn-form form{
     width: 400px;
@@ -166,3 +177,63 @@ header{
 }
 
 
+/*register*/
+.registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    color: white;
+   
+    
+}
+.registro h1{
+    display: flex;
+    text-transform: uppercase;
+    align-self: center;
+    color: white;
+ }
+.tamaño {
+    width: 350px;
+    margin-top: 20px;
+    display: flex;
+    align-self: center;
+    background-color: rgba(128, 128, 128, 0.253);
+    padding: 0 250px;
+    justify-content: center;
+
+    
+ }
+.bro {
+    margin: 50px 50px;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    padding: 0 350px;
+   
+}
+
+
+ .espacio {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+ }
+ 
+ .ti {
+    font-weight: bold;
+    font-size: large;
+    margin: 5px;
+ }
+ .blanco {
+    padding: 5px 35px;
+ }
+
+ .coso{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+ }
