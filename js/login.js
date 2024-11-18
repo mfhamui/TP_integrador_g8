@@ -1,16 +1,20 @@
-let email  = document.querySelector(`input[name="email"]`);
-let Contraseña = document.querySelector(`input[name="contra"]`);
+let email  = document.querySelector(".email");
+let contraseña = document.querySelector(".contra");
+let formu = document.querySelector(".bro");
 
-email.addEventListener("submit", function(){
-        if (this.value =="") {
-            alert ("Por favor complete el campo email")
-        }
-    });
+formu.addEventListener('submit', function (event) {
+    event.preventDefault();
+    if (email.value == "") {
+        alert("Por favor complete el campo email");
+        return;
+    }
+     
+    if (contraseña.value == "") {
+            alert("Por favor complete el campo contraseña");
+            return;
+    }
 
-
-Contraseña.addEventListener("submit",function(){
-        if (this.value == "") {
-            alert ("Por favor complete el campo contraseña")
-        }
-    });
+    else{ this.submit()}
     
+
+});

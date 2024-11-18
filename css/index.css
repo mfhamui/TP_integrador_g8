@@ -212,7 +212,10 @@ header{
     color: white;
     margin: 5px;
  }
- .blanco {
+ .email {
+    padding: 5px 35px;
+ }
+ .contra {
     padding: 5px 35px;
  }
 
