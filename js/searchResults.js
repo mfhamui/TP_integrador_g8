@@ -15,15 +15,15 @@ fetch (URL)
 .then(function (data) {
     console.log(data); 
     let character= "";
-    let results= data.recipies; 
+    let results= data.recipes; 
 
     for (let i = 0; i < results.length; i++) {
         character += 
             `<article>
-                <img src= "${results[i].image}" alt=''>
-                <a href="./detalle.html?id=${results[i].id}">  
-                <p>Name:${results[i].name} </p> </a> 
-                <p>Status: ${results[i].status}</p>
+                <img class= "fotorep" src= "${results[i].image}" alt=''>  
+                <h1 class= "titulorep">Name:${results[i].name} </h1> 
+                <p class= "parraforep" >Nivel de dificultad: ${results[i].id}</p>
+                <a class="linkrep" href="./receta.html?id=${results[i].id}"> Detalle </a>
             </article>`
     };
     sr.innerHTML = character;
