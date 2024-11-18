@@ -1,11 +1,13 @@
-*{box-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
-body{
+
+body {
     background-color: brown;
     margin: 10px;
 }
 
-header{
+header {
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -14,61 +16,67 @@ header{
     margin: auto;
     padding: 0 30px;
 }
-.imagenLogo{
+
+.imagenLogo {
     height: 100px;
     width: 150px;
     display: flex;
     justify-content: end;
     margin-top: 3px;
 }
+
 .imagenLogo img {
     border-radius: 70px;
     justify-content: center;
 }
-.op{ width: 100%;
+
+.op {
+    width: 100%;
     margin-left: 190px;
     margin-top: 10px;
 }
 
-.ulHeader{
-    list-style-type:none ;
+.ulHeader {
+    list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-items: center;
     width: 600px;
     height: 40px;
-    margin: 30px;   
- 
+    margin: 30px;
+
 }
 
 
-.opciones{
+.opciones {
     font-style: bold;
     background-color: brown;
     width: 50%;
     height: 40px;
     margin: 0px 10px;
-    
+
 }
 
 
 .opciones a {
     color: white;
     display: flex;
-    justify-content: center ;
+    justify-content: center;
     margin: 8% 0px;
     text-decoration: none;
-    
-    
+
+
 }
-.barraBusqueda{
+
+.barraBusqueda {
     margin: auto 20px;
     display: flex;
     justify-content: flex-end;
     width: 80%;
-    
+
 }
-.btn{
+
+.btn {
     background-color: brown;
     color: white;
 }
@@ -80,7 +88,7 @@ header{
     margin: 5px 0px;
 }
 
-.titulorep{
+.titulorep {
     font-size: large;
     text-decoration: underline;
     text-transform: capitalize;
@@ -88,21 +96,24 @@ header{
     margin-bottom: 1px;
     color: brown;
 }
-.parraforep{
+
+.parraforep {
     font-weight: normal;
     font-size: medium;
     margin: 5px;
 }
-.comidaindex{
+
+.comidaindex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 
-    
+
 
 }
-.articulorep{
+
+.articulorep {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -112,14 +123,15 @@ header{
     margin: 10px 0;
     background-color: white;
 
-    
+
 }
 
-.linkrep{
+
+.linkrep {
     text-decoration: none;
-    background-color:brown;
+    background-color: brown;
     display: flex;
-    width: 30% ;
+    width: 30%;
     height: 20px;
     text-align: center;
     align-content: center;
@@ -128,58 +140,89 @@ header{
     font-size: medium;
     font-weight: normal;
     justify-content: center;
-    
+
+}
+.nombre{
+    font-size: large;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 1px;
+    color: brown;
+}
+.receta{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 40%;
+    border: 1px dotted black;
+    margin: 10px 0;
+    background-color: white;
+    padding: 8px;
+}
+.comidaDetalle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.image{
+    width: 50%;
+    align-self: center;
+    margin: 5px 0px;
 }
 
+/* log in css */
 
-/* log in css */ 
-
-.titulologin{
+.titulologin {
     display: flex;
     text-transform: uppercase;
     align-self: center;
     color: white;
     font-size: xx-large;
 }
-.logIn-form{
+
+.logIn-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-    
+
 }
 
-.hola{
+.hola {
     padding: 10px;
     margin: 10px;
     height: 50px;
 }
 
-.noTenerCuenta{
+.noTenerCuenta {
     text-decoration: none;
     color: white;
 }
 
 
 /*register*/
-.registro{
+.registro {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: 30px;
     color: white;
-   
-    
+
+
 }
-.registro h1{
+
+.registro h1 {
     display: flex;
     text-transform: uppercase;
     align-self: center;
     color: white;
- }
+}
+
 .tamaño {
     width: 350px;
     margin-top: 20px;
@@ -189,44 +232,48 @@ header{
     padding: 0 250px;
     justify-content: center;
 
-    
- }
+
+}
+
 .bro {
     margin: 50px 50px;
     display: flex;
     align-self: center;
     flex-direction: column;
     padding: 0 350px;
-   
+
 }
 
 
- .espacio {
+.espacio {
     margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
- }
- 
- .titu {
+}
+
+.titu {
     color: white;
     margin: 5px;
- }
- .email {
-    padding: 5px 35px;
- }
- .contra {
-    padding: 5px 35px;
- }
+}
 
- .coso{
+.email {
+    padding: 5px 35px;
+}
+
+.contra {
+    padding: 5px 35px;
+}
+
+.coso {
     display: flex;
     flex-direction: row;
-    justify-content: space-between ;
- }
- .relog{
+    justify-content: space-between;
+}
+
+.relog {
     text-decoration: none;
     color: white;
     margin-top: 10px;
- }
+}
