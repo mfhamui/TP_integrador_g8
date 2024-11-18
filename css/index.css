@@ -19,6 +19,7 @@ header{
     width: 150px;
     display: flex;
     justify-content: end;
+    margin-top: 3px;
 }
 .imagenLogo img {
     border-radius: 70px;
