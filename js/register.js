@@ -10,7 +10,7 @@ formorm.addEventListener ("submit", function(event){
         
     }
     if (contraseña.value == "") {
-        prompt (" Por favor complete el camp");
+        prompt (" Por favor complete el campo");
         
     }
     else{ this.submit()}
