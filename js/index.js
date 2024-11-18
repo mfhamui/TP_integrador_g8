@@ -24,7 +24,7 @@ fetch (URL)
                 <p class= "parraforep" >Nivel de dificultad: ${recipes[i].id}</p>
                 <a class="linkrep" href="./receta.html?id=${recipes[i].id}"> Detalle </a> 
             </article>`
-    };
+    }; 
     ci.innerHTML = comida;
    
 })

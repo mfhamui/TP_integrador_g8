@@ -19,11 +19,11 @@ fetch (URL)
 
     for (let i = 0; i < results.length; i++) {
         character += 
-            `<article>
-                <img class= "fotorep" src= "${results[i].image}" alt=''>  
-                <h1 class= "titulorep">Name:${results[i].name} </h1> 
-                <p class= "parraforep" >Nivel de dificultad: ${results[i].id}</p>
-                <a class="linkrep" href="./receta.html?id=${results[i].id}"> Detalle </a>
+            `<article class="recetados">
+                <img class= "image" src= "${results[i].image}" alt=''>  
+                <h1 class= "titulorep">${results[i].name} </h1> 
+                <p class= "parraforepdos" >Nivel de dificultad: ${results[i].id}</p>
+                <a class="linkrepdos" href="./receta.html?id=${results[i].id}"> Detalle </a>
             </article>`
     };
     sr.innerHTML = character;

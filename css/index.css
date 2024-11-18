@@ -102,15 +102,17 @@ header {
     font-size: medium;
     margin: 5px;
 }
-
+.parraforepdos {
+    font-weight: normal;
+    font-size: medium;
+    margin: 5px;
+    text-align: center;
+}
 .comidaindex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-
-
-
 }
 
 .articulorep {
@@ -142,6 +144,20 @@ header {
     justify-content: center;
 
 }
+.linkrepdos {
+    text-decoration: none;
+    background-color: brown;
+    display: flex;
+    width: 30%;
+    height: 20px;
+    text-align: center;
+    align-content: center;
+    color: white;
+    margin: 10px 0;
+    font-size: medium;
+    font-weight: normal;
+    justify-content: center;
+}
 .nombre{
     font-size: large;
     text-transform: capitalize;
@@ -159,6 +175,20 @@ header {
     margin: 10px 0;
     background-color: white;
     padding: 8px;
+    
+}
+.recetados{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 40%;
+    border: 1px dotted black;
+    margin: 10px 0;
+    background-color: white;
+    padding: 8px;
+    align-items: center;
+
 }
 .comidaDetalle {
     display: flex;
@@ -170,6 +200,12 @@ header {
     width: 50%;
     align-self: center;
     margin: 5px 0px;
+}
+.search-results{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* log in css */
