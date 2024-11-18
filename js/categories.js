@@ -18,7 +18,7 @@ fetch (URL)
 
     for (let i = 0; i < data.length; i++) {
         categoria += 
-            `<article>
+            `<article class="art">
                 <a href="./category.html?id=${data[i]}"> ${data[i]} </a> 
             </article>`
     }; 
