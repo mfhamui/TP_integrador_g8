@@ -1,11 +1,9 @@
+let cate= document.querySelector(".category");
 let qs= location.search
 let qsObj = new URLSearchParams(qs);
 let id = qsObj.get(`id`);
 
-const URL = `'https://dummyjson.com/recipes/tag/${id}`;
-
-
-let cate= document.querySelector(".category"); 
+const URL = `https://dummyjson.com/recipes/tags/${id}`; 
 
 
 fetch (URL)
@@ -20,7 +18,7 @@ fetch (URL)
 
     for (let i = 0; i < recipes.length; i++) {
         comidas += 
-            `<article >
+            `<article>
                 <a  href="./receta.html?id=${recipes[i].id}"> ${recipes[i].name} </a> 
             </article>`
     }; 

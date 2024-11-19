@@ -1,5 +1,4 @@
 let sr= document.querySelector(".search-results"); 
-
 let qs= location.search;
 let qsObj = new URLSearchParams(qs);
 let info = qsObj.get(`buscador`);
