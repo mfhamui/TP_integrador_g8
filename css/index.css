@@ -82,6 +82,11 @@ header {
 }
 
 /*esto es del body*/
+body{
+    background-image: url(../img/fondo2.png);
+    background-repeat: repeat;
+    background-size: 3%;
+}
 .fotorep {
     width: 90%;
     align-self: center;
@@ -231,13 +236,7 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 10%;
-    background-image: url(../img/fondo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: center;
-    
+    margin-left: 10%;    
 }
 
 .nombredos{
@@ -266,7 +265,6 @@ header {
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-
 }
 
 .hola {
