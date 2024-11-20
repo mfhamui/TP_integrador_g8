@@ -18,8 +18,7 @@ fetch (URL)
 
     for (let i = 0; i < recipes.length; i++) {
         comidas += 
-            `<article>
-                
+            `<article class="recetados">
                 <img class= "image" src= "${recipes[i].image}" alt=''>  
                 <h1 class= "titulorep">${recipes[i].name} </h1> 
                 <p class= "parraforepdos" >Difficulty: ${recipes[i].difficulty}</p>
