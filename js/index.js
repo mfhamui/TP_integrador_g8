@@ -35,7 +35,19 @@ fetch (URL)
 
 let btn = document.querySelector(".buscar mas");
 
-formu.addEventListener('click', function (event) {
+/*
+btn.addEventListener('click', function (event) {
     event.preventDefault();
+    for (let i = 0; i < recipes.length; i++) {
+        comida += 
+            `<article class= "articulorep">
+                <img class= "fotorep" src= "${recipes[i].image}" alt=''> 
+                <h1 class= "titulorep">${recipes[i].name} <h1> 
+                <p class= "parraforep" >Difficulty: ${recipes[i].difficulty}</p>
+                <a class="linkrep" href="./receta.html?id=${recipes[i].id}"> Detalle </a> 
+            </article>`
+    }; 
+    ci.innerHTML = comida;
     
 });
+*/
