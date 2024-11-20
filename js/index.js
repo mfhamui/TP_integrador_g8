@@ -32,3 +32,10 @@ fetch (URL)
     return console.log(error);
     
 });
+
+let btn = document.querySelector(".buscar mas");
+
+formu.addEventListener('click', function (event) {
+    event.preventDefault();
+    
+});
