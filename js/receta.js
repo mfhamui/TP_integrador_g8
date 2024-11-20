@@ -16,7 +16,7 @@ let calorias= document.querySelector(".calorias")
 let rate= document.querySelector(".rate")
 let review= document.querySelector(".review")
 let tipo= document.querySelector(".tipo")
-let img = document.querySelector(".image")
+let img = document.querySelector(".imagereceta")
 let tag = document.querySelector(".tag")
 
  

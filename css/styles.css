@@ -214,25 +214,31 @@ body{
     width: 50%;
     align-items: center;
 }
-.image{
+.imagereceta{
     width: 90%;
     height: auto;
     align-self: center;
     margin: 5px 0px;
     border: 1px double brown;
 }
+.image{
+    width: 50%;
+    align-self: center;
+    margin: 5px 0px;
+    border: 1px double brown;
+
+}
 .recetados{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 70%;
+    width: 60%;
     height: 40%;
-    border: 1px dotted black;
+    border: 2px dotted brown;
     margin: 10px 0;
     background-color: white;
-    padding: 8px;
+    padding: 6px;
     align-items: center;
-
 }
 .search-results{
     display: flex;
