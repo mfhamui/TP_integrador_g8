@@ -5,19 +5,12 @@ let id = qsObj.get(`id`);
 const URL = `https://dummyjson.com/recipes/${id}`;
 
 let nom= document.querySelector(".nombre")
-let ingre= document.querySelector(".ingredientes")
+
 let int= document.querySelector(".instrucciones")
-let prep= document.querySelector(".preparacion")
 let coccion= document.querySelector(".coccion")
-let servir= document.querySelector(".servir")
-let dificultad= document.querySelector(".dificultad")
-let cocina= document.querySelector(".cocina")
-let calorias= document.querySelector(".calorias")
-let rate= document.querySelector(".rate")
-let review= document.querySelector(".review")
-let tipo= document.querySelector(".tipo")
 let img = document.querySelector(".imagereceta")
 let tag = document.querySelector(".tag")
+
 
  
    
@@ -32,17 +25,16 @@ fetch (URL)
     console.log(data); 
     nom.innerText= data.name
     int.innerText= `Instructions: ${data.instructions}`
-    ingre.innerText= `Ingredients: ${data.ingredients}`
-    prep.innerText= `Preparation time: ${data.prepTimeMinutes} minutes`
     coccion.innerText= `Cooking time: ${data.cookTimeMinutes} minutes`
-    servir.innerText = `Servings: ${data.servings}`;
-    dificultad.innerText = `Difficulty: ${data.difficulty}`;
-    cocina.innerText = `Type of cuisine: ${data.cuisine }`;
-    calorias.innerText = `Calories: ${data.caloriesPerServing }`;
-    rate.innerText = `Calification: ${data.rating}`;
-    review.innerText = `Reviews: ${data.reviewCount}`;
-    tipo.innerText = `type of meal: ${data.mealType}`;
-    tag.innerText= `tags: ${data.tags}`
+
+    comida= ""
+    let h= data.tags 
+    for (let i = 0; i < h.length; i++) {
+        comida += 
+            `<li><a href="./category.html?id=${h[i]}"> ${h[i]} </a></li>`
+    }; 
+    tag.innerHTML = comida;
+  
     img.src= data.image;
 
 })
