@@ -31,7 +31,7 @@ fetch (URL)
     let h= data.tags 
     for (let i = 0; i < h.length; i++) {
         comida += 
-            `<li><a href="./category.html?id=${h[i]}"> ${h[i]} </a></li>`
+            `<li class="tagdos"><a href="./category.html?id=${h[i]}"> ${h[i]} </a></li>`
     }; 
     tag.innerHTML = comida;
   
