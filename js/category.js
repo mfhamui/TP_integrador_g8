@@ -20,13 +20,13 @@ fetch (URL)
         comidas += 
             `<article>
                 
-                <img class= "image" src= "${results[i].image}" alt=''>  
-                <h1 class= "titulorep">${results[i].name} </h1> 
-                <p class= "parraforepdos" >Difficulty: ${results[i].difficulty}</p>
-                <a class="linkrepdos" href="./receta.html?id=${results[i].id}"> Detalle </a>
+                <img class= "image" src= "${recipes[i].image}" alt=''>  
+                <h1 class= "titulorep">${recipes[i].name} </h1> 
+                <p class= "parraforepdos" >Difficulty: ${recipes[i].difficulty}</p>
+                <a class="linkrepdos" href="./receta.html?id=${recipes[i].id}"> Detalle </a>
             </article>`
     }; 
-    category.innerHTML += comidas
+    cate.innerHTML += comidas
    
 })
 .catch(function (error) {
