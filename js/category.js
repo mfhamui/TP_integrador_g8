@@ -4,6 +4,7 @@ let qsObj = new URLSearchParams(qs);
 let id = qsObj.get(`id`);
 
 const URL = `https://dummyjson.com/recipes/tag/${id}`; 
+let titulo = document.querySelector(".nombredos")
 
 
 fetch (URL)
@@ -15,7 +16,7 @@ fetch (URL)
     console.log(data); 
     let comidas= "";
     let recipes= data.recipes; 
-
+    titulo.innerText= `${id}`
     for (let i = 0; i < recipes.length; i++) {
         comidas += 
             `<article class="recetados">

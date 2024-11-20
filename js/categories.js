@@ -5,7 +5,6 @@ const URL = `https://dummyjson.com/recipes/tags`
 
 let cat= document.querySelector(".categories"); 
 
-
 fetch (URL)
 .then(function (response) {
     return response.json();
@@ -14,7 +13,7 @@ fetch (URL)
 .then(function (data) {
     console.log(data); 
     let categoria= "";
-     
+    
 
     for (let i = 0; i < data.length; i++) {
         let id = data[i];
