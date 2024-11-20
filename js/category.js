@@ -3,7 +3,7 @@ let qs= location.search
 let qsObj = new URLSearchParams(qs);
 let id = qsObj.get(`id`);
 
-const URL = `https://dummyjson.com/recipes/tags/${id}`; 
+const URL = `https://dummyjson.com/recipes/tag/${id}`; 
 
 
 fetch (URL)
@@ -14,18 +14,23 @@ fetch (URL)
 .then(function (data) {
     console.log(data); 
     let comidas= "";
-    let reci= data.recipes; 
+    let recipes= data.recipes; 
 
     for (let i = 0; i < recipes.length; i++) {
         comidas += 
             `<article>
-                <a  href="./receta.html?id=${recipes[i].id}"> ${recipes[i].name} </a> 
+                
+                <img class= "image" src= "${results[i].image}" alt=''>  
+                <h1 class= "titulorep">${results[i].name} </h1> 
+                <p class= "parraforepdos" >Difficulty: ${results[i].difficulty}</p>
+                <a class="linkrepdos" href="./receta.html?id=${results[i].id}"> Detalle </a>
             </article>`
     }; 
-    cate.innerHTML = comidas;
+    category.innerHTML += comidas
    
 })
 .catch(function (error) {
     return console.log(error);
     
 });
+

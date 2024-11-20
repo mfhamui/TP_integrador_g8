@@ -21,7 +21,7 @@ fetch (URL)
             `<article class= "articulorep">
                 <img class= "fotorep" src= "${recipes[i].image}" alt=''> 
                 <h1 class= "titulorep">${recipes[i].name} <h1> 
-                <p class= "parraforep" >Nivel de dificultad: ${recipes[i].id}</p>
+                <p class= "parraforep" >Difficulty: ${recipes[i].difficulty}</p>
                 <a class="linkrep" href="./receta.html?id=${recipes[i].id}"> Detalle </a> 
             </article>`
     }; 
