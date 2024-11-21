@@ -432,14 +432,16 @@ body {
 
 @media (max-width: 420px) {
     /* media del home*/
-    body {
-        width: 100%;
+    body{
+        display: block;
+        max-width: 420px;
         margin: 2px 2px;
         display: flex;
         align-content: center;
         align-items: center;
         flex-direction: column;
     }
+
     .comidaindex{
         display: flex;
         flex-direction: column;
@@ -453,7 +455,7 @@ body {
         justify-content: center;
         box-sizing: border-box;
     }
-    /* media del header */
+    /* media del header y footer*/
     header {
         background-color: white;
         display: flex;
@@ -464,14 +466,16 @@ body {
         max-width: 420px;
         align-items: center;
     }
-
+    .op{
+        max-width: 420px;
+    }
     .ulHeader {
         list-style-type: none;
         display: flex;
         flex-direction: column;
-        justify-items: center;
+        justify-content: center;
         width: 90%;
-        height: 40px;
+        height:max-content;
         margin: 30px;
         text-transform: uppercase;
     }
@@ -483,24 +487,51 @@ body {
     .barraBusqueda {
         display: flex;
         flex-direction: column;
-        margin: auto 20px;
-        display: flex;
-        justify-content: flex-end;
-        width: 80%;
-    }
-
-    .imagenLogo {
-        display: flex;
-        flex-direction: column;
         align-items: center;
+        padding: 10px;
+    }
+    .barraBusqueda .search{
+        width: 80%;
+        padding: 8px;
         margin-bottom: 10px;
     }
-
-    .op {
+    .barraBusqueda .btn{
+        width: 50%;
+        padding: 8px;
+    }
+    .imagenLogo img{
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 0 10px;
+        height: auto;
+        width: 70%;
     }
+
+    
+    
+
+    footer {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+    }
+
+    .flista {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        list-style-type: none;
+        font-weight: 300;
+        text-transform: capitalize;
+        color: brown;
+        font-weight: 400;
+        flex-direction: column;
+        align-items: center;
+    }
+    
 /* media del footer */
     footer {
         background-color: white;
