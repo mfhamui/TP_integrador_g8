@@ -34,12 +34,16 @@ fetch (URL)
 });
 
 let btn = document.querySelector(".buscar mas");
+const url = `https://dummyjson.com/recipes?limit=10&skip=${skip}&select=name,image`
+let skip = 0
 
-/*
 btn.addEventListener('click', function (event) {
     event.preventDefault();
+    skip +=10
+    let recipes = data.recipes
+    let comida = ""
     for (let i = 0; i < recipes.length; i++) {
-        comida += 
+        comidas += 
             `<article class= "articulorep">
                 <img class= "fotorep" src= "${recipes[i].image}" alt=''> 
                 <h1 class= "titulorep">${recipes[i].name} <h1> 
@@ -47,7 +51,7 @@ btn.addEventListener('click', function (event) {
                 <a class="linkrep" href="./receta.html?id=${recipes[i].id}"> Detalle </a> 
             </article>`
     }; 
-    ci.innerHTML = comida;
+    ci.innerHTML = comidas;
     
 });
-*/
+
