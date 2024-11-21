@@ -455,16 +455,18 @@ body {
         justify-content: center;
         box-sizing: border-box;
     }
-    /* media del header y footer*/
+    /* media del header*/
     header {
         background-color: white;
         display: flex;
         flex-direction: column;
         width: 100%;
+        max-width: 420px;
         margin: auto;
         padding: 0 30px;
         max-width: 420px;
         align-items: center;
+        justify-content: center;
     }
     .op{
         max-width: 420px;
@@ -474,9 +476,9 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 90%;
+        align-items: center;
+        width: 100%;
         height:max-content;
-        margin: 30px;
         text-transform: uppercase;
     }
 
@@ -508,29 +510,6 @@ body {
         width: 70%;
     }
 
-    
-    
-
-    footer {
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        align-items: center;
-    }
-
-    .flista {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        list-style-type: none;
-        font-weight: 300;
-        text-transform: capitalize;
-        color: brown;
-        font-weight: 400;
-        flex-direction: column;
-        align-items: center;
-    }
     
 /* media del footer */
     footer {
