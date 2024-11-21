@@ -1,23 +1,22 @@
-let email = document.querySelector(`.email`);
-let contraseña=document.querySelector(`.contra`);
-let form = document.querySelector('.bro');
-
-/*esto esta mal el prompt pide qeu llenes y la consigna no pide eso, esto dice la consigna: 
-Validar el campo email. Si está vacío mostrar al usuario el texto en pantalla (no con alert) 
-"Por favor complete el campo" y el formulario no se enviará.*/ 
+const form = document.querySelector('.bro');
+const emailTexto= document.querySelector('.email');
+const contraTexto = document.querySelector('.contra');
 
 
-form.addEventListener ("submit", function(event){
-    event.preventDefault (); 
-    if (email.value == ""){
-        prompt("Por favor complete el campo");
-        return;
-        
-    }
-    if (contraseña.value == "") {
-        prompt (" Por favor complete el campo");
+form.addEventListener ('submit', function(event){
+    event.preventDefault();
+    if (email.value ==" "){
+        confirm("Por favor complete el campo")
+        console.log("email vacio");
         return;
     }
-    else{ this.submit()}
+    if (contraseña.value.trim() === " "){
+        confirm ("Por favor complete el campo")
+        console.log("contrasena vacio");
+        return;
+    }
+    console.log("estan vacios los campos,completelos ")
+    this.submit ();
+});  
 
-});
+

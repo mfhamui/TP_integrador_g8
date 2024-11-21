@@ -449,5 +449,38 @@ body {
 
     }
 
-    ;
+    
+
+   
+    
+     /* media de log in */
+     .logIn-form{
+        padding: 30px;
+        text-align: center;
+     }
+     .logIn-form .tamaño{
+        width: 80%;
+        margin: 0;
+     }
+     .logIn-form .titulologin{
+        margin-bottom:20px ;
+     }
+     .logIn-form .espacio{
+        margin-bottom:15px ;
+     }
+     .logIn-form .contra .email{
+        width: 100%;
+        padding: 10px;
+
+     }
+     .btn .hola{
+        width: 100%;
+        padding: 10px;
+        
+     }
+     .logIn-form .noTenerCuenta{
+        
+     }
+
+
 }
