@@ -418,6 +418,15 @@ body {
     color: white;
     margin-top: 10px;
 }
+.buscarmas{
+    color: brown;
+    width: 100px;
+    border: 4px brown solid ;
+    display: flex;
+    justify-self: center;
+    font-weight: bolder;
+    f
+}
 
 /* media de INDEX.HTML*/
 
