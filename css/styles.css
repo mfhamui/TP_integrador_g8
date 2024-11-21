@@ -432,23 +432,82 @@ body {
 
 @media (max-width: 420px) {
     body {
-        width: 420px;
+        width: 100%;
         margin: 2px 2px;
         display: flex;
         align-content: center;
         align-items: center;
+        flex-direction: column;
     }
-
-    ;
 
     header {
-        width: 100%;
+        background-color: white;
         display: flex;
         flex-direction: column;
-        align-self: center;
-
+        width: 100%;
+        margin: auto;
+        padding: 0 30px;
+        max-width: 420px;
+        align-items: center;
     }
 
+    .ulHeader {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        width: 90%;
+        height: 40px;
+        margin: 30px;
+        text-transform: uppercase;
+    }
+
+    .ulHeader li {
+        margin-bottom: 3px;
+    }
+
+    .barraBusqueda {
+        display: flex;
+        flex-direction: column;
+        margin: auto 20px;
+        display: flex;
+        justify-content: flex-end;
+        width: 80%;
+    }
+
+    .imagenLogo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .op {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+    }
+
+    .flista {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        list-style-type: none;
+        font-weight: 300;
+        text-transform: capitalize;
+        color: brown;
+        font-weight: 400;
+        flex-direction: column;
+        align-items: center;
+    }
     
 
    
