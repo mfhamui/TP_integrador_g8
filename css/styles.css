@@ -599,5 +599,18 @@ body {
         margin: 0;
 
     }
+    /* media de categorias */
+     
+    .categories{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+       justify-content: center;
+       
+    }
+    .categories .art{
+        width: 50%;
+        
+    }
 
 }
