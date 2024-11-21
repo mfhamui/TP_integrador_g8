@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
 }
- 
+
 body {
     background-color: brown;
     margin: 10px;
@@ -81,11 +81,12 @@ header {
     color: white;
 }
 
-footer{
+footer {
     background-color: white;
-    
+
 }
-.flista{
+
+.flista {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -99,11 +100,12 @@ footer{
 
 
 /*esto es del body*/
-body{
+body {
     background-image: url(../img/fondo3.png);
     background-repeat: repeat;
     background-size: 3%;
 }
+
 .fotorep {
     width: 90%;
     align-self: center;
@@ -124,12 +126,14 @@ body{
     font-size: medium;
     margin: 5px;
 }
+
 .parraforepdos {
     font-weight: normal;
     font-size: medium;
     margin: 5px;
     text-align: center;
 }
+
 .comidaindex {
     display: flex;
     flex-direction: row;
@@ -166,6 +170,7 @@ body{
     justify-content: center;
 
 }
+
 .linkrepdos {
     text-decoration: none;
     background-color: brown;
@@ -180,8 +185,9 @@ body{
     font-weight: normal;
     justify-content: center;
 }
-.nombre{
-    font-size:xx-large;
+
+.nombre {
+    font-size: xx-large;
     text-transform: capitalize;
     text-align: center;
     margin-bottom: 10px;
@@ -194,12 +200,14 @@ body{
     flex-wrap: wrap;
     justify-content: center;
 }
-.contenido{
+
+.contenido {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
-.receta{
+
+.receta {
     width: 70%;
     height: 40%;
     border: 1px dotted brown;
@@ -207,28 +215,32 @@ body{
     background-color: white;
     padding: 8px;
 }
-.cinco{
+
+.cinco {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 50%;
     align-items: center;
 }
-.imagereceta{
+
+.imagereceta {
     width: 90%;
     height: auto;
     align-self: center;
     margin: 5px 0px;
     border: 1px double brown;
 }
-.image{
+
+.image {
     width: 50%;
     align-self: center;
     margin: 5px 0px;
     border: 1px double brown;
 
 }
-.recetados{
+
+.recetados {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -240,28 +252,32 @@ body{
     padding: 6px;
     align-items: center;
 }
-.search-results{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.category{
+
+.search-results {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.tagdos a{
+.category {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tagdos a {
     color: black;
     text-decoration: none;
 }
-.art a{
+
+.art a {
     color: black;
     text-decoration: none;
     font-size: large;
 }
+
 .art {
     text-decoration: none;
     background-color: white;
@@ -277,21 +293,23 @@ body{
     font-weight: normal;
     justify-content: center;
 }
-.categories{
+
+.categories {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 10%;    
+    margin-left: 10%;
 }
 
-.nombredos{
+.nombredos {
     text-transform: capitalize;
     text-align: center;
     margin-bottom: 1px;
     color: white;
     font-size: xx-large;
 }
-.font{
+
+.font {
     font-size: large;
 }
 
@@ -403,20 +421,24 @@ body{
 
 /* media de INDEX.HTML*/
 
-@media (max-width: 420px ) {
-body {
+@media (max-width: 420px) {
+    body {
         width: 420px;
         margin: 2px 2px;
         display: flex;
         align-content: center;
         align-items: center;
-    };
+    }
 
-header {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    
-};
+    ;
+
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+
+    }
+
+    ;
 }
