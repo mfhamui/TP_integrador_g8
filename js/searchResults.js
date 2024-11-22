@@ -33,3 +33,23 @@ fetch (URL)
     return console.log(error);
     
 });
+
+let formbusca=  document.querySelector(".formbusca");
+let search= document.querySelector(".search")
+formbusca.addEventListener('submit', function (event) {
+    event.preventDefault();
+        const searchTerm = search.value;
+
+        if (searchTerm === '') {
+            alert('errorMessage', 'Por favor, ingresa un término de búsqueda.');
+            return;
+        }
+
+        if (searchTerm.length < 3) {
+            alert('errorMessage', 'El término de búsqueda debe tener al menos 3 caracteres.');
+            return;
+        }
+
+        else{ this.submit()}
+    });
+
