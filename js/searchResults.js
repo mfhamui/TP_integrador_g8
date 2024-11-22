@@ -41,12 +41,12 @@ formbusca.addEventListener('submit', function (event) {
         const searchTerm = search.value;
 
         if (searchTerm === '') {
-            alert('errorMessage', 'Por favor, ingresa un término de búsqueda.');
+            alert(' ERROR Por favor, ingresa un término de búsqueda.');
             return;
         }
 
         if (searchTerm.length < 3) {
-            alert('errorMessage', 'El término de búsqueda debe tener al menos 3 caracteres.');
+            alert('ERROR, El término de búsqueda debe tener al menos 3 caracteres.');
             return;
         }
 
