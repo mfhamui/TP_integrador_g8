@@ -410,42 +410,46 @@ body {
     color: white;
     margin-top: 10px;
 }
-.buscarmas{
+
+.buscarmas {
     color: brown;
     width: 100px;
-    border: 4px brown solid ;
+    border: 4px brown solid;
     display: flex;
     justify-self: center;
     font-weight: bolder;
-    
+
 }
 
 /* media de INDEX.HTML*/
 
 @media (max-width: 420px) {
+
     /* media del home*/
-    body{
+    body {
         max-width: 420px;
         display: flex;
-        margin:0px;
+        margin: 0px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
 
-    .comidaindex{
+    .comidaindex {
         display: flex;
         flex-direction: column;
         width: 100%;
         flex-wrap: wrap;
     }
-    .comidaindex .articulorep{
+
+    .comidaindex .articulorep {
         width: 60%;
         display: flex;
         align-self: center;
         justify-content: center;
         box-sizing: border-box;
     }
+
     /* media del header*/
     header {
         background-color: white;
@@ -454,10 +458,11 @@ body {
         width: 100%;
         max-width: 420px;
         align-items: center;
-        padding: 10px 0; 
+        padding: 10px 0;
         height: 300px;
     }
-    .op{
+
+    .op {
         display: flex;
         width: 100%;
         flex-direction: column;
@@ -465,6 +470,7 @@ body {
         align-items: center;
         margin: 0;
     }
+
     .ulHeader {
         list-style-type: none;
         display: flex;
@@ -474,6 +480,7 @@ body {
         padding: 0;
         margin: 0;
     }
+
     .opciones {
         width: 50%;
         height: 20px;
@@ -489,31 +496,35 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        width: 90%; 
+        width: 90%;
         margin-bottom: 10px;
-       
-        
-    
+
+
+
     }
-    .barraBusqueda .search{
+
+    .barraBusqueda .search {
         width: 100%;
         margin-top: 100px;
-       display: flex;
-       justify-self: center;
+        display: flex;
+        justify-self: center;
         margin-bottom: 10px;
         flex-wrap: wrap;
     }
-    .barraBusqueda .btn{
+
+    .barraBusqueda .btn {
         width: 30%;
         display: flex;
-        
+
         justify-self: center;
         flex-wrap: wrap;
     }
-    .imagenLogo img{
+
+    .imagenLogo img {
         height: auto;
         width: 70%;
     }
+
     .imagenLogo {
         display: flex;
         justify-content: center;
@@ -522,8 +533,8 @@ body {
         margin: 3px 0;
     }
 
-    
-/* media del footer */
+
+    /* media del footer */
     footer {
         background-color: white;
         display: flex;
@@ -544,54 +555,62 @@ body {
         flex-direction: column;
         align-items: center;
     }
-    
 
-   
-    
-     /* media de log in */
-     .repes{
+
+
+
+    /* media de log in */
+    .repes {
         display: flex;
         width: 100%;
         max-width: 420px;
 
-     }
-.logIn-form{
-    width: 420px;
+    }
+
+    .logIn-form {
+        width: 420px;
         padding: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 0;
         box-sizing: border-box;
-        
-     }
-.tamaño{
-    display: flex;
-    width: 420px;
-        
-     }
-.bro{ 
-    display: flex;
-    flex-wrap: wrap;
-}
-.titulologin{
-        margin-bottom:20px ;
-     }
-.espacio{
-        margin-bottom:15px ;
-     }
-.contra .email{
+
+    }
+
+    .tamaño {
+        display: flex;
+        width: 420px;
+
+    }
+
+    .bro {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .titulologin {
+        margin-bottom: 20px;
+    }
+
+    .espacio {
+        margin-bottom: 15px;
+    }
+
+    .contra .email {
         width: 100%;
         padding: 10px;
 
-     }
-.btn .hola{
+    }
+
+    .btn .hola {
         width: 100%;
         padding: 10px;
-        
-     }
+
+    }
+
     /* media de registro */
-    .registro{
+    .registro {
         padding: 30px;
         display: flex;
         text-align: center;
@@ -599,18 +618,20 @@ body {
         margin: 0;
 
     }
+
     /* media de categorias */
-     
-    .categories{
+
+    .categories {
         display: flex;
         flex-direction: row;
         align-items: center;
-       justify-content: center;
-       
+        justify-content: center;
+
     }
-    .categories .art{
+
+    .categories .art {
         width: 50%;
-        
+
     }
 
 
