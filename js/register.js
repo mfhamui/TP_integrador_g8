@@ -1,24 +1,27 @@
-const form = document.querySelector('.bro');
-const emailTexto= document.querySelector('.email');
-const contraTexto = document.querySelector('.contra');
-let mensajeError= document.getElementById("mensaje-error");
+let form = document.querySelector('.bro');
+let emailTexto= document.querySelector('.email');
+let contraTexto = document.querySelector('.contra');
+let mensajeError= document.querySelector("#mensaje-error");
 
 form.addEventListener ('submit', function(event){
     event.preventDefault();
-    if (email.value ==" "){
+    if (email.value ==""){
         mensajeError.textContent= "Por favor complete el campo email";    
     }else{
-        mensajeError.textContent=" ";
+        mensajeError.textContent="";
+        
     this.submit();
     }
-    
-    if(contraseña.value ==" "){
-        mensajeError.textContent ="Por favor complete el campo email"; 
+});
+form.addEventListener('submit',function(event){
+    event.preventDefault()
+    if(contraseña.value ==""){
+        mensajeError.textContent ="Por favor complete el campo contraseña"; 
     }else{
-        mensajeError.textContent=" ";
+        mensajeError.textContent="";
+        
     this.submit();
-    }
-   
+    }   
 });  
 
 
