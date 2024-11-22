@@ -17,17 +17,24 @@ fetch (URL)
     let character= "";
     let results= data.recipes; 
     titulo.innerText= `Resultados de búsqueda para: ${info}`;
-    for (let i = 0; i < results.length; i++) {
-        character += 
-            `<article class="recetados">
-                <img class= "image" src= "${results[i].image}" alt=''>  
-                <h1 class= "titulorep">${results[i].name} </h1> 
-                <p class= "parraforepdos" >Difficulty: ${results[i].difficulty}</p>
-                <a class="linkrepdos" href="./receta.html?id=${results[i].id}"> Detalle </a>
-            </article>`
-    };
-    sr.innerHTML = character;
-
+    buscar.addEventListener('submit', function (event) {
+        event.preventDefault();
+        if (info == "") {
+            titulo.innerText= `No existe`;
+        } else {
+            for (let i = 0; i < results.length; i++) {
+                character +=
+                    `<article class="recetados">
+                        <img class= "image" src= "${results[i].image}" alt=''>  
+                        <h1 class= "titulorep">${results[i].name} </h1> 
+                        <p class= "parraforepdos" >Difficulty: ${results[i].difficulty}</p>
+                        <a class="linkrepdos" href="./receta.html?id=${results[i].id}"> Detalle </a>
+                    </article>`
+        }
+        
+        };
+        sr.innerHTML = character;
+    })
 })
 .catch(function (error) {
     return console.log(error);
