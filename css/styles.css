@@ -611,12 +611,15 @@ body {
 
     /* media de registro */
     .registro {
+        width: 420px;
         padding: 30px;
         display: flex;
-        text-align: center;
         justify-content: center;
+        align-items: center;
         margin: 0;
+        box-sizing: border-box;
 
+        
     }
 
     /* media de categorias */
