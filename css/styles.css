@@ -440,7 +440,7 @@ footer {
         flex-wrap: wrap;
     }
 
-    .comidaindex .articulorep {
+    .articulorep {
         width: 60%;
         display: flex;
         align-self: center;
@@ -579,6 +579,7 @@ footer {
     .tamaño {
         display: flex;
         width: 420px;
+        
 
     }
 
@@ -615,8 +616,25 @@ footer {
         justify-content: center;
         align-items: center;
         margin: 0;
-        box-sizing: border-box;
-
+        box-sizing: border-box;   
+    }
+    .mensajeError{
+       display: flex;
+       flex-direction: row;
+       height: 20px;
+        margin-bottom: 50px;
+        align-self: center;
+       background-color: white;
+       color:brown;
+       
+    
+    }
+    .A-mensaje{
+        display: flex;
+        flex-direction: column;
+    }
+    .divMensaje{
+        display: flex;
         
     }
 
@@ -635,6 +653,6 @@ footer {
 
     }
 
-
+    
 
 }

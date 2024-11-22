@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body class="repes">
     <header>
         <section class="imagenLogo">
-            <img src="./img/logo 2.png" alt="" >
+            <img src="./img/logo 2.png" alt="">
         </section>
 
         <section class="op">
@@ -22,58 +24,64 @@
         </section>
 
         <section class="barraBusqueda">
-            <form action= "./searchResults.html"  method="GET">
+            <form action="./searchResults.html" method="GET">
                 <input class="search" name="buscador" type="text" placeholder="escriba aqui...">
-                <button class= "btn" type="submit">Buscar</button>
+                <button class="btn" type="submit">Buscar</button>
             </form>
         </section>
 
 
     </header>
-<main class="registro">
-    <h1>registrate</h1>
-    
-    <section class="tamaño">
-        <form class="bro"  action="./login.html" method="post">
-               
-            <div class="espacio">
-                <label class="titu">Email</label>
-                <input id="email" class="email" type="text" name="email" placeholder="ingrese su mail"> 
-    
+    <main class="registro">
+        <h1>registrate</h1>
+
+        <section class="tamaño">
+            <form class="bro" action="./login.html" method="post">
+
+                <div class="espacio">
+                    <label class="titu">Email</label>
+                    <input id="email" class="email" type="text" name="email" placeholder="ingrese su mail">
+
+
+                </div>
+
+                <div class="espacio">
+                    <label class="titu">Contraseña</label>
+                    <input id="contra" class="contra" type="password" name="contra" placeholder="ingrese su Contraseña">
+
+                </div>
+                <div class="espacio">
+                    <label> <input type="checkbox" name="terminosycondiciones" id="t&c" value="SI">acepto terminos y
+                        condiciones </label>
+                </div>
+
+                <div class="espacio">
+                    <button type="submit" class="btn hola">registrarme</button>
+
+                </div>
                 
-            </div>
-    
-            <div class="espacio">
-                <label class="titu">Contraseña</label>
-                <input  id= "contra"class="contra" type="password" name="contra" placeholder="ingrese su Contraseña" > 
-               
-            </div>
-            <div class="espacio">
-                <label> <input type="checkbox" name="terminosycondiciones" id="t&c" value="SI" >acepto terminos y condiciones </label>
-            </div>
-    
-            <div class="espacio">
-                <button type="submit" class="btn hola">registrarme</button>
-                
-            </div>
+               <div class="A-mensaje">
+                    <a class="relog" href="./login.html">Ya tengo cuenta</a>
+                    <div class="divMensaje">
+                        <p class="mensajeError" id="mensaje-error"></p>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
 
-            <a class="relog" href="./login.html">Ya tengo cuenta</a>
-        <p class= "mensajeError" id="mensaje-error" ></p>
-        </form>
-    </section>
-</main>
+    <footer>
+        <section>
+            <ul class="flista">
+                <li class="integrante">jacinta cosentino</li>
+                <li class="integrante">felicitas hamui</li>
+                <li class="integrante">morena del mastro</li>
+            </ul>
+        </section>
 
-<footer>
-    <section>
-        <ul class="flista">
-            <li class="integrante">jacinta cosentino</li>
-            <li class="integrante">felicitas hamui</li>
-            <li class="integrante">morena del mastro</li>
-        </ul>
-    </section>
-
-</footer>
+    </footer>
 
     <script src="./js/register.js"></script>
 </body>
+
 </html>
