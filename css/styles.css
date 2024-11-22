@@ -433,11 +433,10 @@ body {
 @media (max-width: 420px) {
     /* media del home*/
     body{
-        display: block;
         max-width: 420px;
-        margin: 2px 2px;
         display: flex;
-        align-content: center;
+        margin:0px;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
     }
@@ -462,52 +461,64 @@ body {
         flex-direction: column;
         width: 100%;
         max-width: 420px;
-        margin: auto;
-        padding: 0 30px;
-        max-width: 420px;
         align-items: center;
-        justify-content: center;
+        padding: 10px 0
     }
     .op{
-        max-width: 420px;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
     }
     .ulHeader {
         list-style-type: none;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         width: 100%;
-        height:max-content;
-        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+    }
+    .opciones {
+        width: 50%;
+        height: 20px;
+        margin: 5px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: medium;
     }
 
-    .ulHeader li {
-        margin-bottom: 3px;
-    }
 
     .barraBusqueda {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 90%; 
+        margin-bottom: 10px;
+        
+    
     }
     .barraBusqueda .search{
-        width: 80%;
-        padding: 8px;
+        width: 30%;
+       
         margin-bottom: 10px;
     }
     .barraBusqueda .btn{
-        width: 50%;
-        padding: 8px;
+        width: 30%;
     }
     .imagenLogo img{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 0 10px;
         height: auto;
         width: 70%;
+    }
+    .imagenLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        margin: 3px 0;
     }
 
     
