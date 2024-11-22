@@ -4,6 +4,7 @@ let qsObj = new URLSearchParams(qs);
 let info = qsObj.get(`buscador`);
 
 const URL = `https://dummyjson.com/recipes/search?q=${info}`
+let titulo = document.querySelector(".nombredos");
 
 
 fetch (URL)
@@ -15,7 +16,7 @@ fetch (URL)
     console.log(data); 
     let character= "";
     let results= data.recipes; 
-
+    titulo.innerText= `${info}`;
     for (let i = 0; i < results.length; i++) {
         character += 
             `<article class="recetados">
