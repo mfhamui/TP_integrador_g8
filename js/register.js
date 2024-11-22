@@ -14,10 +14,5 @@ form.addEventListener('submit', function (event) {
         mensajeError.textContent = "";
         this.submit();
     }
-    if (checkbox.ariaChecked= false) {
-        mensajeError.textContent='Por favor acepte terminos y condiciones';
-    } else {
-        mensajeError.textContent="";
-        this.submit();
-    }
+    
 });

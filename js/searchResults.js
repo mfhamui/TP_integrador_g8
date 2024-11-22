@@ -27,7 +27,7 @@ fetch (URL)
             </article>`
     };
     sr.innerHTML = character;
-   
+
 })
 .catch(function (error) {
     return console.log(error);
