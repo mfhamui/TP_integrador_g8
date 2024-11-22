@@ -450,23 +450,24 @@ footer {
 
     /* media del header*/
     header {
-        background-color: white;
         display: flex;
         flex-direction: column;
         width: 100%;
-        max-width: 420px;
+        justify-content: center;
         align-items: center;
         padding: 10px 0;
-        height: 300px;
+        height: 350px;
+        flex-wrap: wrap;
     }
 
     .op {
         display: flex;
         width: 100%;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         margin: 0;
+        height: 120px;
     }
 
     .ulHeader {
@@ -488,23 +489,36 @@ footer {
         align-items: center;
         font-size: medium;
     }
+.opciones a {
+    display: flex;
+    width: 100%;
+}
+.barraBusqueda {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width:200px;
+    height: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    
 
 
-    .barraBusqueda {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 90%;
-        margin-bottom: 10px;
-
-
-
-    }
+}
+.formbusca{
+    padding: 0%;
+    margin-bottom: 40%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: 20px;
+}
+   
 
 .search {
         width: 100%;
-        margin-top: 100px;
         display: flex;
+        height: 20px;
         justify-self: center;
         margin-bottom: 10px;
         flex-wrap: wrap;
