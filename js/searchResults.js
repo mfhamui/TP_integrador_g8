@@ -16,7 +16,7 @@ fetch (URL)
     console.log(data); 
     let character= "";
     let results= data.recipes; 
-    titulo.innerText= `${info}`;
+    titulo.innerText= `Resultados de búsqueda para: ${info}`;
     for (let i = 0; i < results.length; i++) {
         character += 
             `<article class="recetados">
