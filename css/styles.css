@@ -5,6 +5,9 @@
 body {
     background-color: brown;
     margin: 10px;
+    background-image: url(../img/fondo3.png);
+    background-repeat: repeat;
+    background-size: 3%;
 }
 
 header {
@@ -99,12 +102,7 @@ footer {
 
 
 
-/*esto es del body*/
-body {
-    background-image: url(../img/fondo3.png);
-    background-repeat: repeat;
-    background-size: 3%;
-}
+
 
 .fotorep {
     width: 90%;
