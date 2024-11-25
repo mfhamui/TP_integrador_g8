@@ -30,6 +30,14 @@ fetch(URL)
 
         sr.innerHTML = character;
 
+        if (results.length == 0){
+            
+            sr.innerHTML = "No hay coincidencias";
+            sr.style.fontSize= "30px";
+            sr.style.color= "white";
+            sr.style.margin= "10px";
+        };
+
     })
 
     .catch(function (error) {
@@ -56,4 +64,6 @@ formbusca.addEventListener('submit', function (event) {
 
     else { this.submit() }
 });
+
+
 
