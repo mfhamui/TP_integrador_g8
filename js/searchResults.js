@@ -23,7 +23,6 @@ fetch(URL)
                 `<article class="recetados">
                         <img class= "image" src= "${results[i].image}" alt=''>  
                         <h1 class= "titulorep">${results[i].name} </h1> 
-                        <p class= "parraforepdos" >Difficulty: ${results[i].difficulty}</p>
                         <a class="linkrepdos" href="./receta.html?id=${results[i].id}"> Detalle </a>
                     </article>`
         };
