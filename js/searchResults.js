@@ -51,5 +51,5 @@ formbusca.addEventListener('submit', function (event) {
         }
 
         else{ this.submit()}
-    });
+    });  
 
