@@ -2,7 +2,8 @@ let cate= document.querySelector(".category");
 let qs= location.search
 let qsObj = new URLSearchParams(qs);
 let id = qsObj.get(`id`);
-
+let formbusca = document.querySelector(".formbusca");
+let search = document.querySelector(".search")
 const URL = `https://dummyjson.com/recipes/tag/${id}`; 
 let titulo = document.querySelector(".nombredos")
 
@@ -34,5 +35,23 @@ fetch (URL)
     
 });
 
+
+
+formbusca.addEventListener('submit', function (event) {
+    event.preventDefault();
+    const searchTerm = search.value;
+
+    if (searchTerm === '') {
+        alert(' ERROR Por favor, ingresa un término de búsqueda.');
+        return;
+    }
+
+    if (searchTerm.length < 3) {
+        alert('ERROR, El término de búsqueda debe tener al menos 3 caracteres.');
+        return;
+    }
+
+    else { this.submit() }
+});
 
 
