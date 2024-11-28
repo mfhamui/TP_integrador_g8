@@ -63,7 +63,7 @@ btn.addEventListener("click", function (event) {
                 </article>`
             };
             ci.innerHTML += comidas;
-
+            
 
 
         })
