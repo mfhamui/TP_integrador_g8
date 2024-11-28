@@ -23,40 +23,26 @@ fetch(URL)
                 `<article class="recetados">
                         <img class= "image" src= "${results[i].image}" alt=''>  
                         <h1 class= "titulorep">${results[i].name} </h1> 
-                        <p class= "parraforepdos" >Difficulty: ${results[i].difficulty}</p>
                         <a class="linkrepdos" href="./receta.html?id=${results[i].id}"> Detalle </a>
                     </article>`
         };
 
         sr.innerHTML = character;
 
+        if (results.length == 0){
+            
+            sr.innerHTML = "No hay coincidencias";
+            sr.style.fontSize= "30px";
+            sr.style.color= "white";
+            sr.style.margin= "10px";
+        };
+
     })
-    
-    .catch (function (error) {
-    return console.log(error);
 
-});
+    .catch(function (error) {
+        return console.log(error);
 
-if (info) {
-    fetchRecipes(info);
-}
-
-// Escucha el evento de entrada en el campo de búsqueda
-search.addEventListener('input', function (event) {
-    let valor = search.value; // Obtiene el valor actual del campo de búsqueda
-    if (valor.trim() === "") {
-        sr.innerText = `Error: Por favor ingresa un término de búsqueda.`;
-        return; // Salimos si no hay valor
-    } else {
-        sr.innerText = ""; // Limpia el mensaje de error
-    }
-
-    // Realiza la búsqueda con el nuevo valor
-    fetchRecipes(valor);
-});
-
-
-
+    });
 
 
 
@@ -66,15 +52,17 @@ formbusca.addEventListener('submit', function (event) {
     const searchTerm = search.value;
 
     if (searchTerm === '') {
-        alert('errorMessage', 'Por favor, ingresa un término de búsqueda.');
+        alert(' ERROR Por favor, ingresa un término de búsqueda.');
         return;
     }
 
     if (searchTerm.length < 3) {
-        alert('errorMessage', 'El término de búsqueda debe tener al menos 3 caracteres.');
+        alert('ERROR, El término de búsqueda debe tener al menos 3 caracteres.');
         return;
     }
 
     else { this.submit() }
 });
+
+
 

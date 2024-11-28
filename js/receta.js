@@ -1,7 +1,8 @@
 let qs= location.search
 let qsObj = new URLSearchParams(qs);
 let id = qsObj.get(`id`);
-
+let formbusca = document.querySelector(".formbusca");
+let search = document.querySelector(".search")
 const URL = `https://dummyjson.com/recipes/${id}`;
 
 let nom= document.querySelector(".nombre")
@@ -41,4 +42,23 @@ fetch (URL)
 .catch(function (error) {
     return console.log(error);
     
+});
+
+
+
+formbusca.addEventListener('submit', function (event) {
+    event.preventDefault();
+    const searchTerm = search.value;
+
+    if (searchTerm === '') {
+        alert(' ERROR Por favor, ingresa un término de búsqueda.');
+        return;
+    }
+
+    if (searchTerm.length < 3) {
+        alert('ERROR, El término de búsqueda debe tener al menos 3 caracteres.');
+        return;
+    }
+
+    else { this.submit() }
 });
