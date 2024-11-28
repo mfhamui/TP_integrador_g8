@@ -1,6 +1,6 @@
+let formu = document.querySelector(".formula");
 let email  = document.querySelector(".email");
 let contraseña = document.querySelector(".contra");
-let formu = document.querySelector(".bro");
 let formbusca = document.querySelector(".formbusca");
 let search = document.querySelector(".search")
 formu.addEventListener('submit', function (event) {

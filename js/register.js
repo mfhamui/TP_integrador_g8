@@ -1,4 +1,4 @@
-let form = document.querySelector('.bro');
+let form = document.querySelector('.formula');
 let emailTexto = document.querySelector('.email');
 let contraTexto = document.querySelector('.contra');
 let mensajeError = document.querySelector("#mensaje-error");

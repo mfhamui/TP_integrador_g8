@@ -19,7 +19,7 @@ fetch (URL)
     let recipes= data.recipes; 
     titulo.innerText= `${id}`
     for (let i = 0; i < recipes.length; i++) {
-        comidas += 
+        comidas +=
             `<article class="recetados">
                 <img class= "image" src= "${recipes[i].image}" alt=''>  
                 <h1 class= "titulorep">${recipes[i].name} </h1> 
