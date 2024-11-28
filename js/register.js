@@ -6,7 +6,7 @@ let checkbox = document.querySelector("#check");
 let formbusca = document.querySelector(".formbusca");
 let search = document.querySelector(".search")
 form.addEventListener('submit', function (event) {
-    event.preventDefault();
+    event.preventDefault(); /* asi se puede validar las condiciones*/
     if (emailTexto.value == "") {
         mensajeError.textContent = "Por favor complete el campo email";
         return;
@@ -19,7 +19,7 @@ form.addEventListener('submit', function (event) {
          mensajeError.textContent="acepte terminos y condiciones";
         return;
     }
-    mensajeError.textContent="";
+    mensajeError.textContent=""; 
     form.submit();
 });
 

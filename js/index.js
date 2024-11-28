@@ -65,9 +65,6 @@ btn.addEventListener("click", function (event) {
             };
             ci.innerHTML += comidas;
 
-            if (recipes.length < 10) {
-                btn.style.display="none";
-            };
 
 
         })
