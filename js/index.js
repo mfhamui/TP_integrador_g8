@@ -58,9 +58,11 @@ btn.addEventListener("click", function (event) {
                 comidas +=
                     `<article class= "articulorep">
                     <img class= "fotorep" src= "${recipes[i].image}" alt=''> 
-                    <h1 class= "titulorep">${recipes[i].name} <h1> 
+                    <h2 class= "titulorep">${recipes[i].name} <h2> 
+                    <div class= ultimocambio>
                     <p class= "parraforep" >Difficulty: ${recipes[i].difficulty}</p>
-                    <a class="linkrep" href="./receta.html?id=${recipes[i].id}"> Detalle </a> 
+                    <a class="linkrep" href="./receta.html?id=${recipes[i].id}"> Detalle </a>
+                    </div>
                 </article>`
             };
             ci.innerHTML += comidas;

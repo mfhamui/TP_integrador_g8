@@ -22,7 +22,7 @@ fetch(URL)
             character +=
                 `<article class="recetados">
                         <img class= "image" src= "${results[i].image}" alt=''>  
-                        <h1 class= "titulorep">${results[i].name} </h1> 
+                        <h2 class= "titulorep">${results[i].name} </h2> 
                         <a class="linkrepdos" href="./receta.html?id=${results[i].id}"> Detalle </a>
                     </article>`
         };

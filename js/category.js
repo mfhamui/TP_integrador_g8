@@ -22,7 +22,7 @@ fetch (URL)
         comidas +=
             `<article class="recetados">
                 <img class= "image" src= "${recipes[i].image}" alt=''>  
-                <h1 class= "titulorep">${recipes[i].name} </h1> 
+                <h2 class= "titulorep">${recipes[i].name} </h2> 
                 <p class= "parraforepdos" >Difficulty: ${recipes[i].difficulty}</p>
                 <a class="linkrepdos" href="./receta.html?id=${recipes[i].id}"> Detalle </a>
             </article>`
